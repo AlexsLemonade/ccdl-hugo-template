@@ -13,29 +13,6 @@ $(document).ready(function(){
   });
 });
 
-// Navigation change on scroll
-$(document).ready(function(){
-  var maxOffset = 300;
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= maxOffset) {
-      $('.navbar-default').addClass('navbar-shrink');
-    }
-    else {
-      $('.navbar-default').removeClass('navbar-shrink');
-    }
-  });
-});
-
-$(document).ready(function(){
-  var maxOffset = 300;
-  if ($(window).scrollTop() >= maxOffset) {
-    $('.navbar-default').addClass('navbar-shrink');
-  }
-  else {
-    $('.navbar-default').removeClass('navbar-shrink');
-  }
-});
-
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
