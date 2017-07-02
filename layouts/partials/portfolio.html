@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row">
-      {{ range .Site.Content.project }}
+      {{ range .Site.Data.projects }}
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="{{ .url }}">
             {{ $url := printf "img/portfolio/%s" .preview }}
