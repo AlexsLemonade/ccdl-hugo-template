@@ -48,7 +48,7 @@ googleAnalytics = ""
     brand = "The Agency"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
-    services = "Services"
+    mission = "Mission"
     portfolio = "Portfolio"
     about = "About"
     team = "Team"
@@ -80,27 +80,27 @@ googleAnalytics = ""
     buttonText = "Tell me more"
 
 
-  # Services section
-  [params.services]
+  # Mission section
+  [params.mission]
     enable = true
-    title = "Services"
+    title = "mission"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-    [[params.services.row]]
+    [[params.mission.row]]
 
-    [[params.services.row.list]]
+    [[params.mission.row.list]]
       icon = "fa-shopping-cart"
       title = "E-Commerce"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
-    [[params.services.row.list]]
+    [[params.mission.row.list]]
       icon = "fa-laptop"
       title = "Responsive Design"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
       url = "#"
 
-    [[params.services.row.list]]
+    [[params.mission.row.list]]
       icon = "fa-lock"
       title = "Web"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."

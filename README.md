@@ -32,12 +32,12 @@ The hero acts as an eye-catcher for your site. So consider to give him a nice ba
 
 ### Present your skills
 
-This section should show your capabilities and skills. You can change the services at `[params.services.list]` in the [`config.toml`](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/exampleSite/config.toml).
+This section should show your capabilities and skills. You can change the mission at `[params.mission.list]` in the [`config.toml`](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/exampleSite/config.toml).
 
 All icons are part of Fontawesome's icon font. Look at the website of [Fontawesome](//fortawesome.github.io/Font-Awesome/icons/) for more icons. The icons are represented by their corresponding CSS class of Fontawesome. A skill is defined like this example:
 
 ```toml
-[[params.services.list]]
+[[params.mission.list]]
       icon = "fa-shopping-cart"
       title = "E-Commerce"
       description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."

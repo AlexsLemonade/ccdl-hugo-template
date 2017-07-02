@@ -3,7 +3,7 @@
 ### 11th November 2016
 - Center team members and improve variety alignment issues.
 - Add additional information options for team members.
-- Make services clickable via url attribute.
+- Make mission clickable via url attribute.
 - Possibility to substitute formspring.io for forms.
 - Enable removal of contact form fields.
 
