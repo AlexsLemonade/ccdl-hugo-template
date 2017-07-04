@@ -18,12 +18,12 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a,
@@ -354,7 +354,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Architects Daughter","Helvetica Neue",Helvetica,Arial,cursive;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -432,7 +432,7 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Architects Daughter","Helvetica Neue",Helvetica,Arial,cursive;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #portfolio * {
@@ -693,7 +693,7 @@ section h3.section-subheading {
 }
 
 .team-member h5 {
-    font-size: 14px;
+    font-size: 16px;
     text-transform: none;
     font-style: italic;
     font-weight: 200;

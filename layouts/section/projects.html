@@ -17,13 +17,12 @@
         <div class="row">
           {{ range where .Pages "Section" "projects" }}
             <div class="col-md-4 col-sm-6 portfolio-item">
-              <p> {{ .Title }}</p>
               <a href="{{ .RelPermalink }}">
-                {{ $url := printf "img/project/%s-preview.png" .File.BaseFileName }}
+                {{ $url := printf "img/projects/%s-preview.png" .File.BaseFileName }}
                 <img src="{{ $url | absURL }}" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
-                <h4>{{ .Data.title }}</h4>
+                <h4>{{ .Title }}</h4>
               </div>
             </div>
           {{ end }}
