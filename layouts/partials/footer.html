@@ -21,7 +21,7 @@
         </ul>
       </div>
       <div class="col-sm-12">
-        <span class="copyright">©{{ now.Year }} {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</span>
+        <span class="copyright">©{{ .Now.Year }} {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</span>
       </div>
     </div>
   </div>
