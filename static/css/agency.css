@@ -953,6 +953,10 @@ img::-moz-selection {
     background: 0 0;
 }
 
+img.blog-list {
+  width: 50px;
+}
+
 body {
     webkit-tap-highlight-color: #fed136;
 }-

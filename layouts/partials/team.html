@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row flexbox{{ if .Site.Params.team.center }} flexbox-center{{ end }}">
-      {{ range .Site.Params.team.members }}
+      {{ range .Site.Data.team }}
         <div class="col-sm-4 col">
           <div class="team-member">
             {{ $url := printf "img/team/%s" .img }}
