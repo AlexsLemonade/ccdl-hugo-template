@@ -15,9 +15,7 @@
           </div>
         </div>
         <div class="row">
-          {{ printf "%#v" . }}
           {{ range .Data.Pages }}
-            {{ printf "%#v" . }}
             <div class="col-md-4 col-sm-4 portfolio-item">
               <a href="{{ .RelPermalink }}">
                 {{ $url := printf "img/projects/%s" .Params.preview }}
