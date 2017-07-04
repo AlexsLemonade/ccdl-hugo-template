@@ -19,7 +19,7 @@
             <div class="col-md-4 col-sm-4 portfolio-item">
               <a href="{{ .RelPermalink }}">
                 {{ $url := printf "img/projects/%s" .Params.preview }}
-                <img src="{{ $url | absURL }}" class="img-responsive" alt="">
+                <img src="{{ $url | absURL }}" class="img-responsive center-block" alt="">
               </a>
               <div class="portfolio-caption">
                 <h4>{{ .Title }}</h4>
