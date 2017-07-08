@@ -8,7 +8,7 @@
 
     <section id="portfolio">
       <div class="container">
-        <div class="row equal">
+        <div class="row">
           {{ $author := .Params.Team }}
           {{ range $.Site.Data.team }}
             {{ if eq .name $author }}
