@@ -8,26 +8,32 @@
 
     <section id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ .Title }}</h2>
-            <h3 class="section-subheading text-muted">{{ .Description }}</h3>
+        <div class="row equal">
+          {{ $author := .Params.Team }}
+          {{ range $.Site.Data.team }}
+            {{ if eq .name $author }}
+            {{ $url := printf "img/team/%s" .img }}
+            <div class="col-xs-2 col-sm-1">
+              <img src="{{ $url | absURL }}" class="img-rounded img-responsive" alt="{{ .name }}">
+            </div>
+            <div class="col-xs-10 blog-author text-left">
+              <span class="blog-author-name">
+                {{ .name }}
+                {{ range .social }}
+                  <a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a>
+                {{ end }}
+              </span>
+              <br>
+              <span class="blog-author-position small">{{ .position }}</span><br>
+            {{ end }}
+          {{ end }}
+              <span class="blog-time-date small">{{ .Date.Format "3:4PM EST January 02, 2006" }}. About a {{ .ReadingTime }} minute read.</span>
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-              {{ $url := printf "img/projects/%s" .Params.img }}
-              <img src="{{ $url | absURL }}" class="img-responsive center-block" alt="">
-            </div>
-            <div class="col-lg-12 text-center">
-              <ul class="list-inline social-buttons">
-
-                {{ range .Params.social }}
-                  <li><a href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
-                {{ end }}
-
-              </ul>
-            </div>
+          <div class="col-xs-12 text-left">
+            <h2 class="section-heading">{{ .Title }}</h2>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg-12 text-justify">
