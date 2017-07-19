@@ -6,6 +6,7 @@ author = ""
 # Author must be defined as a team member to display correctly
 fullheadimg = "" # define this if you want an image at the top of the blog post
 halfheadimg = "" # define this if you want an image alongside the headline
+# PLEASE DON'T BOTHER TO DEFINE BOTH FULL AND HALF. IF YOU DO, ONLY FULL IS USED.
 +++
 
 <!--
