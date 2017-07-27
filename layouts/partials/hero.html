@@ -1,10 +1,19 @@
 {{ "<!-- Hero -->" | safeHTML }}
 <header>
   <div class="container">
-    <div class="intro-text">
-      <div class="intro-heading">{{ with .Site.Params.hero.prelede }}{{ . | markdownify }}{{ end }}</div>
-      <div class="intro-lead-in">{{ with .Site.Params.hero.lede }}{{ . | markdownify }}{{ end }}</div>
-      <div class="intro-heading">{{ with .Site.Params.hero.postlede }}{{ . | markdownify }}{{ end }}</div>
+    <div class="row">
+      <div class="intro-text">
+        <div class="intro-slogan">
+        Turn researchers who fight childhood cancer into data wizards.
+        </div>
+    </div>
+    </div>
+    <div class="row hidden-xs">
+      <div class="col-md-offset-8 col-md-4">
+        <div class="intro-heading">{{ with .Site.Params.hero.prelede }}{{ . | markdownify }}{{ end }}</div>
+        <div class="intro-lead-in">{{ with .Site.Params.hero.lede }}{{ . | markdownify }}{{ end }}</div>
+        <div class="intro-heading">{{ with .Site.Params.hero.postlede }}{{ . | markdownify }}{{ end }}</div>
+      </div>
     </div>
   </div>
 </header>
