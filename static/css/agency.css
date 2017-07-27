@@ -324,9 +324,11 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Architects Daughter","Helvetica Neue",Helvetica,Arial,cursive;
+        font-family: "Noto Sans","Helvetica Neue",Helvetica,Arial,cursive;
         font-size: 40px;
         line-height: 40px;
+        font-weight: bold;
+
     }
 
     header .intro-text .intro-heading {
@@ -335,6 +337,8 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        font-weight: bold;
+
     }
 }
 
