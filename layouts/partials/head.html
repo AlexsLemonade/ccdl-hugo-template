@@ -28,6 +28,10 @@
     <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
   {{ end }}
 
+  {{ if .Site.Params.donate.enable }}
+    <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet">
+  {{ end }}
+  
   {{ "<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->" | safeHTML }}
   {{ "<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->" | safeHTML }}
   {{ "<!--[if lt IE 9]>" | safeHTML }}

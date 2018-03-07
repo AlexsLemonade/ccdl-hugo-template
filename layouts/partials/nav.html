@@ -59,6 +59,12 @@
           </li>
         {{ end }}
 
+        {{ if .Site.Params.donate.enable }}
+        <li>
+          <a class="page-scroll" href="{{ .Site.BaseURL }}#donate">{{ with .Site.Params.navigation.donate }}{{ . }}{{ end }}</a>
+        </li>
+        {{ end }}
+
         {{ if .Site.Params.contact.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>

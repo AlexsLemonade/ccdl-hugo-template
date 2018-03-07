@@ -15,6 +15,10 @@
       {{ partial "team.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.donate.enable }}
+      {{ partial "donate.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.clients_list.enable }}
       {{ partial "clients.html" . }}
     {{ end }}
