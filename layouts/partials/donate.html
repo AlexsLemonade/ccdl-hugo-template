@@ -12,8 +12,7 @@
           {{ if .current }}
             <div class="col-sm-4 col">
               <div class="team-member">
-                {{ $url := printf "img/donate/%s" .img }}
-                <img src="{{ $url | absURL }}" class="img-responsive img-square" alt="{{ .name }}">
+                <img src="{{ .img | absURL }}" class="img-responsive img-square" alt="{{ .name }}">
                 <h3>{{ .name | markdownify }}</h3>
                 <p>{{ .description | markdownify }}</p>
                 <button
@@ -22,7 +21,7 @@
                   data-item-name="{{ .name }}"
                   data-item-price="{{ .price }}"
                   data-item-url=" {{ .url }}">
-                    <i class="fas fa-shopping-cart"></i>
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
